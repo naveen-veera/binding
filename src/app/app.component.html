@@ -5,15 +5,23 @@
 </nav>
 <div id="input-container" class="container">
   <h5>Select the Animal</h5>
-  <select id="input-field" class="input-box" [(ngModel)]="animalPosition">
-    <option value="0">Dog</option>
-    <option value="1">Cat</option>
-    <option value="2">Lion</option>
-    <option value="3">Tiger</option>
-    <option value="4">Elephant</option>
+  <select id="input-field" name="animalName" class="input-box" [(ngModel)]="animalPosition">
+    <option id="dog" value="0">Dog</option>
+    <option id="cat" value="1">Cat</option>
+    <option id="lion" value="2">Lion</option>
+    <option id="tiger" value="3">Tiger</option>
+    <option id="elephant" value="4">Elephant</option>
   </select>
 </div>
 <div id="output-container" class="container">
-  <img *ngIf="animalPosition" id={{animalSource[animalPosition]}} src="{{animalSource[animalPosition]}}"
+  <img *ngIf="animalPosition == 0" id="dogUrl" src="{{animalSource[animalPosition]}}"
+    alt="{{animalPosition}}" />
+    <img *ngIf="animalPosition == 1" id="catUrl" src="{{animalSource[animalPosition]}}"
+    alt="{{animalPosition}}" />
+    <img *ngIf="animalPosition == 2" id="lionUrl" src="{{animalSource[animalPosition]}}"
+    alt="{{animalPosition}}" />
+    <img *ngIf="animalPosition == 3" id="tigerUrl" src="{{animalSource[animalPosition]}}"
+    alt="{{animalPosition}}" />
+    <img *ngIf="animalPosition == 4" id="elephantUrl" src="{{animalSource[animalPosition]}}"
     alt="{{animalPosition}}" />
 </div>
