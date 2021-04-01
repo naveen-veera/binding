@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Binding';
+
+  animalPosition: number;
+
+  animalSource = [
+    "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg",
+    "https://images.pexels.com/photos/1543793/pexels-photo-1543793.jpeg",
+    "https://images.pexels.com/photos/1598377/pexels-photo-1598377.jpeg",
+    "https://images.pexels.com/photos/2541239/pexels-photo-2541239.jpeg",
+    "https://images.pexels.com/photos/3551498/pexels-photo-3551498.jpeg"
+  ]
 }
+
